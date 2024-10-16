@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<fmiModelDescription fmiVersion="3.0" generationDateAndTime="2024-10-16T11:58:25Z" generationTool="Simulink (R2024a)" instantiationToken="{4beaf9dc-e1a7-bfb8-8388-74526fdf4128}" modelName="batteriemodell_simscape" variableNamingConvention="structured" version="1.11">
+  <CoSimulation canBeInstantiatedOnlyOncePerProcess="false" canGetAndSetFMUState="false" canHandleVariableCommunicationStepSize="true" canSerializeFMUState="false" hasEventMode="true" modelIdentifier="batteriemodell_simscape" needsExecutionTool="true"/>
+  <UnitDefinitions>
+    <Unit name="1"/>
+    <Unit name="deltaK"/>
+  </UnitDefinitions>
+  <LogCategories>
+    <Category description="All messages from FMU, MATLAB exceptions, and MATLAB command window." name="logAll"/>
+    <Category description="Error message from FMU or MATLAB exceptions." name="logStatusError"/>
+  </LogCategories>
+  <DefaultExperiment startTime="0" stopTime="10"/>
+  <ModelVariables>
+    <Float64 causality="input" description="Input" initial="exact" name="Input" start="0" unit="1" valueReference="0" variability="continuous"/>
+    <Float64 causality="input" description="Input1" initial="exact" name="Input1" start="0" unit="1" valueReference="1" variability="continuous"/>
+    <Float64 causality="input" description="Input2" initial="exact" name="Input2" start="0" unit="1" valueReference="2" variability="continuous"/>
+    <Float64 causality="input" description="Input3" initial="exact" name="Input3" start="0" unit="1" valueReference="3" variability="continuous"/>
+    <Float64 causality="input" description="Input4" initial="exact" name="Input4" start="0" unit="1" valueReference="4" variability="continuous"/>
+    <Float64 causality="input" description="Input5" initial="exact" name="Input5" start="0" unit="1" valueReference="5" variability="continuous"/>
+    <Float64 causality="input" description="Input6" initial="exact" name="Input6" start="0" unit="1" valueReference="6" variability="continuous"/>
+    <Float64 causality="input" description="Input7" initial="exact" name="Input7" start="0" unit="1" valueReference="7" variability="continuous"/>
+    <Float64 causality="input" description="Input8" initial="exact" name="Input8" start="0" unit="1" valueReference="8" variability="continuous"/>
+    <Float64 causality="input" description="Input9" initial="exact" name="Input9" start="0" unit="1" valueReference="9" variability="continuous"/>
+    <Float64 causality="input" description="Input10" initial="exact" name="Input10" start="0" unit="1" valueReference="10" variability="continuous"/>
+    <Float64 causality="input" description="Input11" initial="exact" name="Input11" start="0" unit="1" valueReference="11" variability="continuous"/>
+    <Float64 causality="input" description="Input12" initial="exact" name="Input12" start="0" unit="1" valueReference="12" variability="continuous"/>
+    <Float64 causality="input" description="Input13" initial="exact" name="Input13" start="0" unit="1" valueReference="13" variability="continuous"/>
+    <Float64 causality="output" description="Output" initial="calculated" name="Output" unit="deltaK" valueReference="15" variability="continuous"/>
+    <Float64 causality="independent" description="time" name="time" valueReference="14" variability="continuous"/>
+  </ModelVariables>
+  <ModelStructure>
+    <Output valueReference="15"/>
+    <InitialUnknown valueReference="15"/>
+  </ModelStructure>
+  <Annotations>
+    <Annotation type="com.mathworks.Simulink">
+      <Simulink>
+        <ImportCompatibility FMUProduct="variable step FMU" requireMATLABOnPath="yes" requireRelease="R2024a"/>
+        <SimulinkProject modelName="batteriemodell_simscape" projectName=""/>
+        <SimulinkModelInterface>
+          <Inport blockPath="batteriemodell_simscape/Input" dataType="double" dimension="[1]" portName="Input" portNumber="1" sampleTime="[0 0]" tag="cosimTransformedInput_1" uniquePortName="Input" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input1" dataType="double" dimension="[1]" portName="Input1" portNumber="2" sampleTime="[0 0]" tag="cosimTransformedInput_2" uniquePortName="Input1" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input2" dataType="double" dimension="[1]" portName="Input2" portNumber="3" sampleTime="[0 0]" tag="cosimTransformedInput_3" uniquePortName="Input2" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input3" dataType="double" dimension="[1]" portName="Input3" portNumber="4" sampleTime="[0 0]" tag="cosimTransformedInput_4" uniquePortName="Input3" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input4" dataType="double" dimension="[1]" portName="Input4" portNumber="5" sampleTime="[0 0]" tag="cosimTransformedInput_5" uniquePortName="Input4" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input5" dataType="double" dimension="[1]" portName="Input5" portNumber="6" sampleTime="[0 0]" tag="cosimTransformedInput_6" uniquePortName="Input5" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input6" dataType="double" dimension="[1]" portName="Input6" portNumber="7" sampleTime="[0 0]" tag="cosimTransformedInput_7" uniquePortName="Input6" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input7" dataType="double" dimension="[1]" portName="Input7" portNumber="8" sampleTime="[0 0]" tag="cosimTransformedInput_8" uniquePortName="Input7" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input8" dataType="double" dimension="[1]" portName="Input8" portNumber="9" sampleTime="[0 0]" tag="cosimTransformedInput_9" uniquePortName="Input8" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input9" dataType="double" dimension="[1]" portName="Input9" portNumber="10" sampleTime="[0 0]" tag="cosimTransformedInput_10" uniquePortName="Input9" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input10" dataType="double" dimension="[1]" portName="Input10" portNumber="11" sampleTime="[0 0]" tag="cosimTransformedInput_11" uniquePortName="Input10" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input11" dataType="double" dimension="[1]" portName="Input11" portNumber="12" sampleTime="[0 0]" tag="cosimTransformedInput_12" uniquePortName="Input11" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input12" dataType="double" dimension="[1]" portName="Input12" portNumber="13" sampleTime="[0 0]" tag="cosimTransformedInput_13" uniquePortName="Input12" unit="1"/>
+          <Inport blockPath="batteriemodell_simscape/Input13" dataType="double" dimension="[1]" portName="Input13" portNumber="14" sampleTime="[0 0]" tag="cosimTransformedInput_14" uniquePortName="Input13" unit="1"/>
+          <Outport blockPath="batteriemodell_simscape/Output" dataType="double" dimension="[1]" portName="Output" portNumber="1" sampleTime="[0 0]" tag="cosimTransformedOutput_1" uniquePortName="Output" unit="deltaK"/>
+        </SimulinkModelInterface>
+      </Simulink>
+    </Annotation>
+  </Annotations>
+</fmiModelDescription>
