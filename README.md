@@ -12,7 +12,7 @@ Output work ideas:
 - For correlating combinations, look into graphs
 - evtl. GLM to detect most influencing parameters (exclude autocorrelated parameters > 0.45)
 
-====================================================
+====================================================\\
 First steps for Power Group:
 - Maren translates all the constraints given in the paper into code (LateX, Python), optimization problem formulation of objective function and constraints
 - Ecem puts the differential equations into py functions, sets up the umbridge server
