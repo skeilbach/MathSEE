@@ -1,34 +1,37 @@
+Look at DMEGC-cells first
+
+
 LGChem_18650_M29
-R_th,c,i
-R_th,cell-cell,air
-R_th,cell-cell,con
-R_th,c,o
-R_th,cells-case
-R_th,case-amb,1 = 2.3524   %right
-R_th,case-amb,2 = 0.8574   %top
-R_th,case-amb,3 = 2.3524   %left
-R_th,case-amb,4 = 3.0574   %bottom
-R_th,case-amb,5 = 8.5584   %front
-R_th,case-amb,6 = 5.9909   %back
-C_th,c,i
-C_th,c,o
-C_th,case
+R_th,c,i =
+R_th,cell-cell,air =
+R_th,cell-cell,con =
+R_th,c,o =
+R_th,cells-case =
+R_th,case-amb,1 = 2.3524;   %right
+R_th,case-amb,2 = 0.8574;   %top
+R_th,case-amb,3 = 2.3524;   %left
+R_th,case-amb,4 = 3.0574;   %bottom
+R_th,case-amb,5 = 8.5584;   %front
+R_th,case-amb,6 = 5.9909;   %back
+C_th,c,i = 
+C_th,c,o = 
+C_th,case = 110; %uncertain, is calculated by multiplication of literature value for steel (550) (unclear if thats the right material) and mass of module (0.2) (also only approximational value)
 
 DMEGC_18650_29E
-R_th,c,i
-R_th,cell-cell,air
-R_th,cell-cell,con
-R_th,c,o
-R_th,cells-case
-R_th,case-amb,1
-R_th,case-amb,2
-R_th,case-amb,3
-R_th,case-amb,4
-R_th,case-amb,5
-R_th,case-amb,6
-C_th,c,i
-C_th,c,o
-C_th,case
+R_th,c,i = 0.555; %Weil vereinfacht nur eine Schicht betrachtet wird (Annahme: recht genau)
+R_th,cell-cell,air = 0.01/(0.1*0.001*85); %Schätzwert da Abstand der Zellen nicht genau bekannt
+R_th,cell-cell,con = 0.01/(0.1*0.001*85); %Schätzwert da Abstand der Zellen nicht genau bekannt
+R_th,c,o = 0.555; %Weil vereinfacht nur eine Schicht betrachtet wird (Annahme: recht genau)
+R_th,cells-case = 1/(0.065 * 2 * pi * 0.009*5*7*22)+1/(0.4701*5) %Ungenau, da Fläche von Zellen größer als Fläche vom Case
+R_th,case-amb,1 = 2.3524;   %right
+R_th,case-amb,2 = 0.8574;   %top von Interesse wegen Lüftungsschlitzen
+R_th,case-amb,3 = 2.3524;   %left
+R_th,case-amb,4 = 3.0574;   %bottom Schätzwert da Übergang Stahl Plexiglas nicht bekannt
+R_th,case-amb,5 = 8.5584;   %front
+R_th,case-amb,6 = 5.9909;   %back
+%%  C_th,c,i = 14*22*34.932/2; %recht sicher, da eigentlich bekannte Werte
+%%  C_th,c,o = 14*22*34.932/2;
+%%  C_th,case = 110; %uncertain, is calculated by multiplication of literature value for steel (550) (unclear if thats the right material) and mass of module (0.2) (also only approximational value)
 
 DMEGC_18650_25P
 R_th,c,i
@@ -36,15 +39,15 @@ R_th,cell-cell,air
 R_th,cell-cell,con
 R_th,c,o
 R_th,cells-case
-R_th,case-amb,1
-R_th,case-amb,2
-R_th,case-amb,3
-R_th,case-amb,4
-R_th,case-amb,5
-R_th,case-amb,6
+R_th,case-amb,1 = 2.3524;   %right
+R_th,case-amb,2 = 0.8574;   %top
+R_th,case-amb,3 = 2.3524;   %left
+R_th,case-amb,4 = 3.0574;   %bottom
+R_th,case-amb,5 = 8.5584;   %front
+R_th,case-amb,6 = 5.9909;   %back
 C_th,c,i
 C_th,c,o
-C_th,case
+C_th,case = 110; %uncertain, is calculated by multiplication of literature value for steel (550) (unclear if thats the right material) and mass of module (0.2) (also only approximational value)
 
 TerraE_18650_30E
 R_th,c,i
@@ -52,15 +55,15 @@ R_th,cell-cell,air
 R_th,cell-cell,con
 R_th,c,o
 R_th,cells-case
-R_th,case-amb,1
-R_th,case-amb,2
-R_th,case-amb,3
-R_th,case-amb,4
-R_th,case-amb,5
-R_th,case-amb,6
+R_th,case-amb,1 = 2.3524;   %right
+R_th,case-amb,2 = 0.8574;   %top
+R_th,case-amb,3 = 2.3524;   %left
+R_th,case-amb,4 = 3.0574;   %bottom
+R_th,case-amb,5 = 8.5584;   %front
+R_th,case-amb,6 = 5.9909;   %back
 C_th,c,i
 C_th,c,o
-C_th,case
+C_th,case = 110; %uncertain, is calculated by multiplication of literature value for steel (550) (unclear if thats the right material) and mass of module (0.2) (also only approximational value)
 
 TENPOWER_18650_25PG
 R_th,c,i
@@ -68,12 +71,12 @@ R_th,cell-cell,air
 R_th,cell-cell,con
 R_th,c,o
 R_th,cells-case
-R_th,case-amb,1
-R_th,case-amb,2
-R_th,case-amb,3
-R_th,case-amb,4
-R_th,case-amb,5
-R_th,case-amb,6
+R_th,case-amb,1 = 2.3524;   %right
+R_th,case-amb,2 = 0.8574;   %top
+R_th,case-amb,3 = 2.3524;   %left
+R_th,case-amb,4 = 3.0574;   %bottom
+R_th,case-amb,5 = 8.5584;   %front
+R_th,case-amb,6 = 5.9909;   %back
 C_th,c,i
 C_th,c,o
-C_th,case
+C_th,case = 110; %uncertain, is calculated by multiplication of literature value for steel (550) (unclear if thats the right material) and mass of module (0.2) (also only approximational value)
